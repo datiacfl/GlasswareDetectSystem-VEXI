@@ -1,0 +1,2413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CDlgSGenReg</class>
+ <widget class="CItemDlg" name="CDlgSGenReg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>559</width>
+    <height>947</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Body General Region Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_29">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label_19">
+       <property name="text">
+        <string>CheckRegion:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnDrawReg">
+       <property name="text">
+        <string>Set</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnResetReg">
+       <property name="text">
+        <string>ResetReg</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_37">
+       <property name="text">
+        <string>ShapeType:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboShapeType"/>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_16">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>175</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>GeneralDefects</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_10">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Edge</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="spinEdge">
+          <property name="contextMenuPolicy">
+           <enum>Qt::NoContextMenu</enum>
+          </property>
+          <property name="minimum">
+           <number>-255</number>
+          </property>
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="value">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>25</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Gray</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="spinGray">
+          <property name="contextMenuPolicy">
+           <enum>Qt::NoContextMenu</enum>
+          </property>
+          <property name="maximum">
+           <number>255</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>25</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>Area</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="spinArea">
+          <property name="contextMenuPolicy">
+           <enum>Qt::NoContextMenu</enum>
+          </property>
+          <property name="maximum">
+           <number>9999</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>25</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Length</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="spinLength">
+          <property name="contextMenuPolicy">
+           <enum>Qt::NoContextMenu</enum>
+          </property>
+          <property name="maximum">
+           <number>9999</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_27">
+     <item>
+      <spacer name="horizontalSpacer_35">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_46">
+       <property name="text">
+        <string>MoreDefects</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnExpand_SpeDefects">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>5</width>
+         <height>5</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>+</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_SpeDefects">
+     <property name="title">
+      <string>SpecialDefects</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_38">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_25">
+        <item>
+         <widget class="QPushButton" name="btnStone">
+          <property name="text">
+           <string>BtnStone</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnDarkDot">
+          <property name="text">
+           <string>BtnDarkDot</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnTinyCrack">
+          <property name="text">
+           <string>BtnTinyCrack</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnLightStripe">
+          <property name="text">
+           <string>BtnLightStripe</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnBubbles">
+          <property name="text">
+           <string>BtnBubbles</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_Stone">
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_26">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>3</number>
+         </property>
+         <property name="bottomMargin">
+          <number>3</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <item>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>50</width>
+                 <height>13</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkStone">
+               <property name="text">
+                <string>Stone</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>Edge</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinStoneEdge">
+               <property name="contextMenuPolicy">
+                <enum>Qt::NoContextMenu</enum>
+               </property>
+               <property name="minimum">
+                <number>0</number>
+               </property>
+               <property name="maximum">
+                <number>255</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <item>
+              <widget class="QLabel" name="label_14">
+               <property name="text">
+                <string>Area</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinStoneArea">
+               <property name="contextMenuPolicy">
+                <enum>Qt::NoContextMenu</enum>
+               </property>
+               <property name="maximum">
+                <number>999</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_7">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_8">
+             <item>
+              <widget class="QLabel" name="label_13">
+               <property name="text">
+                <string>Number</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinStoneNum">
+               <property name="contextMenuPolicy">
+                <enum>Qt::NoContextMenu</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_19">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+        <zorder></zorder>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_DarkDot">
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_24">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>3</number>
+         </property>
+         <property name="bottomMargin">
+          <number>3</number>
+         </property>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_37">
+           <item>
+            <spacer name="verticalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>50</width>
+               <height>17</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkDarkdot">
+             <property name="text">
+              <string>Darkdot</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_33">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_23">
+           <item>
+            <widget class="QLabel" name="label_42">
+             <property name="text">
+              <string>Edge</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinDarkdotEdge">
+             <property name="contextMenuPolicy">
+              <enum>Qt::NoContextMenu</enum>
+             </property>
+             <property name="minimum">
+              <number>0</number>
+             </property>
+             <property name="maximum">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_31">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_35">
+           <item>
+            <widget class="QLabel" name="label_43">
+             <property name="text">
+              <string>Area</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinDarkdotArea">
+             <property name="contextMenuPolicy">
+              <enum>Qt::NoContextMenu</enum>
+             </property>
+             <property name="maximum">
+              <number>999</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_32">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_39">
+           <item>
+            <widget class="QLabel" name="label_45">
+             <property name="text">
+              <string>Circularity</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QDoubleSpinBox" name="spinDarkdotCir">
+             <property name="contextMenuPolicy">
+              <enum>Qt::NoContextMenu</enum>
+             </property>
+             <property name="decimals">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <double>1.000000000000000</double>
+             </property>
+             <property name="singleStep">
+              <double>0.100000000000000</double>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_34">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_36">
+           <item>
+            <widget class="QLabel" name="label_44">
+             <property name="text">
+              <string>Number</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinDrakdotNum">
+             <property name="contextMenuPolicy">
+              <enum>Qt::NoContextMenu</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_30">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>62</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+        <zorder></zorder>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_TinyCrack">
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_28">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>3</number>
+         </property>
+         <property name="bottomMargin">
+          <number>3</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_13">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_22">
+             <item>
+              <spacer name="verticalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkTinyCrack">
+               <property name="text">
+                <string>TinyCrack</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_22">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_21">
+             <item>
+              <widget class="QLabel" name="label_11">
+               <property name="text">
+                <string>Edge</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinTinyCrackEdge">
+               <property name="contextMenuPolicy">
+                <enum>Qt::NoContextMenu</enum>
+               </property>
+               <property name="minimum">
+                <number>-255</number>
+               </property>
+               <property name="maximum">
+                <number>255</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_18">
+             <item>
+              <widget class="QLabel" name="label_25">
+               <property name="text">
+                <string>Length</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinTinyCrackLength">
+               <property name="contextMenuPolicy">
+                <enum>Qt::NoContextMenu</enum>
+               </property>
+               <property name="maximum">
+                <number>9999</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_19">
+             <item>
+              <widget class="QLabel" name="label_24">
+               <property name="text">
+                <string>InRadius</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinTinyCrackInRadius">
+               <property name="contextMenuPolicy">
+                <enum>Qt::NoContextMenu</enum>
+               </property>
+               <property name="maximum">
+                <number>999</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_20">
+             <item>
+              <widget class="QLabel" name="label_23">
+               <property name="text">
+                <string>Anisometry</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinTinyCrackAnis">
+               <property name="contextMenuPolicy">
+                <enum>Qt::NoContextMenu</enum>
+               </property>
+               <property name="maximum">
+                <number>999</number>
+               </property>
+               <property name="value">
+                <number>5</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_20">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>17</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_17">
+             <item>
+              <widget class="QLabel" name="label_26">
+               <property name="text">
+                <string>Phi</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_12">
+               <item>
+                <widget class="QSpinBox" name="spinTinyCrackPhiL">
+                 <property name="contextMenuPolicy">
+                  <enum>Qt::NoContextMenu</enum>
+                 </property>
+                 <property name="maximum">
+                  <number>180</number>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_12">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spinTinyCrackPhiH">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="contextMenuPolicy">
+                  <enum>Qt::NoContextMenu</enum>
+                 </property>
+                 <property name="maximum">
+                  <number>180</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+        <zorder></zorder>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_LightStripe">
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_29">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>3</number>
+         </property>
+         <property name="bottomMargin">
+          <number>3</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_22">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_16">
+             <item>
+              <spacer name="verticalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>62</width>
+                 <height>17</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkLightStripes">
+               <property name="text">
+                <string>LightStripe</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_17">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_15">
+             <item>
+              <widget class="QLabel" name="label_9">
+               <property name="text">
+                <string>Edge</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinLightStripesEdge">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="contextMenuPolicy">
+                <enum>Qt::NoContextMenu</enum>
+               </property>
+               <property name="minimum">
+                <number>0</number>
+               </property>
+               <property name="maximum">
+                <number>255</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_14">
+             <item>
+              <widget class="QLabel" name="label_20">
+               <property name="text">
+                <string>Length</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinLightStripesLength">
+               <property name="contextMenuPolicy">
+                <enum>Qt::NoContextMenu</enum>
+               </property>
+               <property name="maximum">
+                <number>9999</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_13">
+             <item>
+              <widget class="QLabel" name="label_21">
+               <property name="text">
+                <string>InRadius</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinLightStripesInRadius">
+               <property name="focusPolicy">
+                <enum>Qt::WheelFocus</enum>
+               </property>
+               <property name="contextMenuPolicy">
+                <enum>Qt::NoContextMenu</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_24">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>41</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_12">
+             <item>
+              <widget class="QLabel" name="label_22">
+               <property name="text">
+                <string>Phi</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_11">
+               <item>
+                <widget class="QSpinBox" name="spinLightStripesPhiL">
+                 <property name="contextMenuPolicy">
+                  <enum>Qt::NoContextMenu</enum>
+                 </property>
+                 <property name="maximum">
+                  <number>180</number>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_36">
+                 <property name="text">
+                  <string>-</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spinLightStripesPhiH">
+                 <property name="contextMenuPolicy">
+                  <enum>Qt::NoContextMenu</enum>
+                 </property>
+                 <property name="maximum">
+                  <number>180</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+        <zorder></zorder>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_Bubbles">
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_30">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>3</number>
+         </property>
+         <property name="bottomMargin">
+          <number>3</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_23">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_30">
+             <item>
+              <spacer name="verticalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>62</width>
+                 <height>17</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkBubbles">
+               <property name="text">
+                <string>Bubbles</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_25">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_31">
+             <item>
+              <widget class="QLabel" name="label_38">
+               <property name="text">
+                <string>LowThres</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinBubblesLowThres">
+               <property name="contextMenuPolicy">
+                <enum>Qt::NoContextMenu</enum>
+               </property>
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="maximum">
+                <number>255</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_27">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_32">
+             <item>
+              <widget class="QLabel" name="label_39">
+               <property name="text">
+                <string>HighThres</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinBubblesHighThres">
+               <property name="contextMenuPolicy">
+                <enum>Qt::NoContextMenu</enum>
+               </property>
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="maximum">
+                <number>255</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_28">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_33">
+             <item>
+              <widget class="QLabel" name="label_40">
+               <property name="text">
+                <string>XldCicularity</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="spinBubblesCir">
+               <property name="contextMenuPolicy">
+                <enum>Qt::NoContextMenu</enum>
+               </property>
+               <property name="decimals">
+                <number>2</number>
+               </property>
+               <property name="maximum">
+                <double>1.000000000000000</double>
+               </property>
+               <property name="singleStep">
+                <double>0.010000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_29">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_34">
+             <item>
+              <widget class="QLabel" name="label_41">
+               <property name="text">
+                <string>XldLen</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinBubblesLength">
+               <property name="contextMenuPolicy">
+                <enum>Qt::NoContextMenu</enum>
+               </property>
+               <property name="maximum">
+                <number>99999</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_26">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Expanding</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>41</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_Bubbles_2">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_40">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>3</number>
+         </property>
+         <property name="bottomMargin">
+          <number>3</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_41">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_65">
+             <item>
+              <spacer name="verticalSpacer_12">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>62</width>
+                 <height>17</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkBubbles_7">
+               <property name="text">
+                <string>Bubbles</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_62">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_66">
+             <item>
+              <widget class="QLabel" name="label_67">
+               <property name="text">
+                <string>LowThres</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinBubblesLowThres_7">
+               <property name="contextMenuPolicy">
+                <enum>Qt::NoContextMenu</enum>
+               </property>
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="maximum">
+                <number>255</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_63">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_67">
+             <item>
+              <widget class="QLabel" name="label_68">
+               <property name="text">
+                <string>HighThres</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinBubblesHighThres_7">
+               <property name="contextMenuPolicy">
+                <enum>Qt::NoContextMenu</enum>
+               </property>
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="maximum">
+                <number>255</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_64">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_68">
+             <item>
+              <widget class="QLabel" name="label_69">
+               <property name="text">
+                <string>Area</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinBubblesArea_7">
+               <property name="contextMenuPolicy">
+                <enum>Qt::NoContextMenu</enum>
+               </property>
+               <property name="maximum">
+                <number>99999</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_65">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_69">
+             <item>
+              <widget class="QLabel" name="label_70">
+               <property name="text">
+                <string>GrayOffset</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinBubblesGrayOffset_7">
+               <property name="contextMenuPolicy">
+                <enum>Qt::NoContextMenu</enum>
+               </property>
+               <property name="maximum">
+                <number>99999</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_66">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Expanding</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>41</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_9">
+     <property name="leftMargin">
+      <number>9</number>
+     </property>
+     <item>
+      <widget class="QCheckBox" name="checkOpen">
+       <property name="text">
+        <string>OpenSize</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDoubleSpinBox" name="spinOpeningSize">
+       <property name="contextMenuPolicy">
+        <enum>Qt::NoContextMenu</enum>
+       </property>
+       <property name="decimals">
+        <number>1</number>
+       </property>
+       <property name="minimum">
+        <double>0.500000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>35.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.500000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_13">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>178</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>DisturbFilter</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_28">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_14">
+        <item>
+         <widget class="QCheckBox" name="checkDisturbEdge">
+          <property name="text">
+           <string>AnewDetection</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_36">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>30</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_18">
+          <property name="text">
+           <string>Edge</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="spinDistEdge">
+          <property name="contextMenuPolicy">
+           <enum>Qt::NoContextMenu</enum>
+          </property>
+          <property name="minimum">
+           <number>3</number>
+          </property>
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="value">
+           <number>3</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_18">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>175</width>
+            <height>17</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_21">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_27">
+          <item>
+           <spacer name="verticalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>74</width>
+              <height>30</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="checkDisturbCondition1">
+            <property name="text">
+             <string>Condition1</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="checkDisturbCondition2">
+            <property name="text">
+             <string>Condition2</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_26">
+          <item>
+           <widget class="QLabel" name="label_30">
+            <property name="text">
+             <string>Phi</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_19">
+            <item>
+             <widget class="QLabel" name="label_10">
+              <property name="text">
+               <string>90°±</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="spinDisConVerPhi">
+              <property name="contextMenuPolicy">
+               <enum>Qt::NoContextMenu</enum>
+              </property>
+              <property name="minimum">
+               <number>0</number>
+              </property>
+              <property name="maximum">
+               <number>90</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_20">
+            <item>
+             <widget class="QLabel" name="label_35">
+              <property name="text">
+               <string>0°±</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="spinDisConHorPhi">
+              <property name="contextMenuPolicy">
+               <enum>Qt::NoContextMenu</enum>
+              </property>
+              <property name="minimum">
+               <number>0</number>
+              </property>
+              <property name="maximum">
+               <number>90</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_23">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>14</width>
+            <height>41</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_25">
+          <item>
+           <widget class="QLabel" name="label_28">
+            <property name="text">
+             <string>InRadius</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_17">
+            <item>
+             <widget class="QSpinBox" name="spinDisConInRadiusL1">
+              <property name="contextMenuPolicy">
+               <enum>Qt::NoContextMenu</enum>
+              </property>
+              <property name="maximum">
+               <number>999</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_31">
+              <property name="text">
+               <string>-</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="spinDisConInRadiusH1">
+              <property name="contextMenuPolicy">
+               <enum>Qt::NoContextMenu</enum>
+              </property>
+              <property name="maximum">
+               <number>999</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_18">
+            <item>
+             <widget class="QSpinBox" name="spinDisConInRadiusL2">
+              <property name="contextMenuPolicy">
+               <enum>Qt::NoContextMenu</enum>
+              </property>
+              <property name="maximum">
+               <number>999</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_33">
+              <property name="text">
+               <string>-</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="spinDisConInRadiusH2">
+              <property name="contextMenuPolicy">
+               <enum>Qt::NoContextMenu</enum>
+              </property>
+              <property name="maximum">
+               <number>999</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_21">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>14</width>
+            <height>41</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_24">
+          <item>
+           <widget class="QLabel" name="label_29">
+            <property name="text">
+             <string>Anisometry</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_15">
+            <item>
+             <widget class="QSpinBox" name="spinDisConAniL1">
+              <property name="contextMenuPolicy">
+               <enum>Qt::NoContextMenu</enum>
+              </property>
+              <property name="maximum">
+               <number>999</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_32">
+              <property name="text">
+               <string>-</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="spinDisConAniH1">
+              <property name="contextMenuPolicy">
+               <enum>Qt::NoContextMenu</enum>
+              </property>
+              <property name="maximum">
+               <number>999</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_16">
+            <item>
+             <widget class="QSpinBox" name="spinDisConAniL2">
+              <property name="contextMenuPolicy">
+               <enum>Qt::NoContextMenu</enum>
+              </property>
+              <property name="maximum">
+               <number>999</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_34">
+              <property name="text">
+               <string>-</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="spinDisConAniH2">
+              <property name="contextMenuPolicy">
+               <enum>Qt::NoContextMenu</enum>
+              </property>
+              <property name="maximum">
+               <number>999</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <spacer name="horizontalSpacer_12">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnExpand">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>5</width>
+         <height>5</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>+</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupAdvPara">
+     <property name="title">
+      <string>Advanced Parameters</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="2" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>ThreScale</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDoubleSpinBox" name="spinRoiRatio">
+            <property name="contextMenuPolicy">
+             <enum>Qt::NoContextMenu</enum>
+            </property>
+            <property name="maximum">
+             <double>1.000000000000000</double>
+            </property>
+            <property name="singleStep">
+             <double>0.010000000000000</double>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_8">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>55</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_10">
+          <item>
+           <widget class="QLabel" name="label_15">
+            <property name="text">
+             <string>FillSize</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="spinClosingWH">
+            <property name="contextMenuPolicy">
+             <enum>Qt::NoContextMenu</enum>
+            </property>
+            <property name="maximum">
+             <number>999</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_9">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>55</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_11">
+          <item>
+           <widget class="QLabel" name="label_16">
+            <property name="text">
+             <string>BreachSize</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="spinGapWH">
+            <property name="contextMenuPolicy">
+             <enum>Qt::NoContextMenu</enum>
+            </property>
+            <property name="maximum">
+             <number>999</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QCheckBox" name="checkGenRoi">
+          <property name="text">
+           <string>Pretreatment</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_14">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>InternalParameters</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_15">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>PretreatmentParameters:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_10">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>205</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="4" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <item>
+         <widget class="QLabel" name="label_17">
+          <property name="text">
+           <string>MeanScale</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="spinMaskSize">
+          <property name="contextMenuPolicy">
+           <enum>Qt::NoContextMenu</enum>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>501</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_27">
+          <property name="text">
+           <string>MeanGray</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="spinMeanGray">
+          <property name="contextMenuPolicy">
+           <enum>Qt::NoContextMenu</enum>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>255</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_11">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_closeSize">
+          <property name="text">
+           <string>CloseSize</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="spinClosingSize">
+          <property name="contextMenuPolicy">
+           <enum>Qt::NoContextMenu</enum>
+          </property>
+          <property name="decimals">
+           <number>1</number>
+          </property>
+          <property name="minimum">
+           <double>0.500000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>35.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.500000000000000</double>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>CItemDlg</class>
+   <extends>QWidget</extends>
+   <header>citemdlg.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>btnDrawReg</tabstop>
+  <tabstop>spinEdge</tabstop>
+  <tabstop>spinGray</tabstop>
+  <tabstop>spinArea</tabstop>
+  <tabstop>spinLength</tabstop>
+  <tabstop>checkStone</tabstop>
+  <tabstop>spinStoneEdge</tabstop>
+  <tabstop>spinStoneArea</tabstop>
+  <tabstop>spinStoneNum</tabstop>
+  <tabstop>btnExpand</tabstop>
+  <tabstop>checkGenRoi</tabstop>
+  <tabstop>spinRoiRatio</tabstop>
+  <tabstop>spinClosingWH</tabstop>
+  <tabstop>spinGapWH</tabstop>
+  <tabstop>spinMaskSize</tabstop>
+  <tabstop>spinClosingSize</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+ <slots>
+  <slot>accept()</slot>
+  <slot>reject()</slot>
+ </slots>
+</ui>

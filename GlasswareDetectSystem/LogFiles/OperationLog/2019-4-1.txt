@@ -1,0 +1,39 @@
+[OperationInfo]
+INFO_1=2019-4-1 16:30:48 \x521d\x59cb\x5316\x53c2\x6570\xff01
+INFO_2=2019-4-1 16:30:48 \x8bfb\x53d6\x914d\x7f6e\x4fe1\x606f\xff01
+INFO_3=2019-4-1 16:30:48 \x521d\x59cb\x5316\xff01
+INFO_4=2019-4-1 16:30:48 \x52a0\x8f7d\x53c2\x6570\xff0c\x521d\x59cb\x5316\x76f8\x673a\xff01
+INFO_5="2019-4-1 16:30:48 InitCamera0,begin"
+INFO_6="2019-4-1 16:30:48 InitCamera0,over"
+INFO_7="2019-4-1 16:30:48 InitCamera1,begin"
+INFO_8="2019-4-1 16:30:48 InitCamera1,over"
+INFO_9="2019-4-1 16:30:48 InitCamera2,begin"
+INFO_10="2019-4-1 16:30:48 InitCamera2,over"
+INFO_11=2019-4-1 16:30:48 \x521d\x59cb\x5316\x56fe\x50cf\xff01
+INFO_12=2019-4-1 16:30:48 \x521d\x59cb\x5316IO\x5361\xff01
+INFO_13=2019-4-1 16:30:48 \x521d\x59cb\x5316\x68c0\x6d4b\xff01
+INFO_14=2019-4-1 16:30:50 \x521d\x59cb\x5316\x754c\x9762\xff01
+INFO_15=2019-4-1 16:30:51 \x63d2\x5165\x4e0a\x4e00\x5c0f\x65f6\x4fe1\x606f\xff01
+INFO_16=2019-4-1 16:30:52 \x5f00\x542f\x68c0\x6d4b\x7ebf\x7a0b!
+INFO_17=2019-4-1 16:30:55 \x8fdb\x5165\x7cfb\x7edf!
+INFO_18=2019-4-1 16:30:55 \x6587\x4ef6\x4e0d\x5b58\x5728\xff0c\x51c6\x5907\x521b\x5efa\xff01
+INFO_19=2019-4-1 16:30:59 Log in
+INFO_20=2019-4-1 16:30:59 \x8fdb\x5165\x56fe\x50cf\x754c\x9762
+INFO_21=2019-4-1 16:31:0 \x8fdb\x5165\x7edf\x8ba1\x754c\x9762
+INFO_22=2019-4-1 16:31:3 \x8fdb\x5165\x56fe\x50cf\x754c\x9762
+INFO_23=2019-4-1 16:31:4 \x8fdb\x5165\x7edf\x8ba1\x754c\x9762
+INFO_24=2019-4-1 16:31:21 \x5173\x95ed\x7b97\x6cd5\x8bbe\x7f6e\xff01
+INFO_25=2019-4-1 16:31:21 \x9000\x51fa\x7cfb\x7edf\xff01
+INFO_26=2019-4-1 16:31:21 \x4fdd\x5b58\x7edf\x8ba1\x4fe1\x606f\xff01
+INFO_27=2019-4-1 16:31:21 \x4fdd\x5b58\x7edf\x8ba1\x4fe1\x606f\x7ed3\x675f\xff01
+INFO_28=2019-4-1 16:31:21 \x4fdd\x5b58\x7edf\x8ba1\x4fe1\x606f\xff01
+INFO_29=2019-4-1 16:31:21 \x4fdd\x5b58\x7edf\x8ba1\x4fe1\x606f\x7ed3\x675f\xff01
+INFO_30=2019-4-1 16:31:21 \x5173\x95edIO\x5361
+INFO_31=2019-4-1 16:31:21 \x505c\x6b62&\x7ed3\x675f\x68c0\x6d4b\x7ebf\x7a0b\xff01
+INFO_32=2019-4-1 16:31:21 \x91ca\x653e\x56fe\x50cf
+INFO_33=2019-4-1 16:31:21 \x91ca\x653e\x7ed3\x675f
+INFO_34=2019-4-1 16:31:22 \x91ca\x653e\x7528\x6237\x754c\x9762
+INFO_35=2019-4-1 16:31:22 \x91ca\x653e\x7528\x6237\x7ba1\x7406
+
+[setup]
+total=35

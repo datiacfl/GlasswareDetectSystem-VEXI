@@ -1,0 +1,201 @@
+#include "widgetwarning.h"
+
+#include <QDesktopWidget>
+#include <QApplication>
+#include <QLayout>
+
+#include <windows.h>
+#include "glasswaredetectsystem.h"
+extern GlasswareDetectSystem *pMainFrm;
+HideThread::HideThread(QObject *parent)
+	: QThread(parent)
+{
+	//	pMainFrm = (GlasswareDetectSystem *)parent;
+	m_bStopThread = false;
+}
+
+HideThread::~HideThread()
+{
+
+}
+
+void HideThread::run()
+{
+	if(!m_bStopThread)
+	{
+		QDesktopWidget* desktopWidget = QApplication::desktop();
+		for(int i = 0;i < 250 ;i++)
+		{
+			if(!m_bStopThread)
+			{
+				emit signal_Move(desktopWidget->width()-400,desktopWidget->height()-250+i);
+				Sleep(2);
+			}
+			else
+			{
+				return;
+			}
+		}
+		emit signal_HideWidget();
+	}
+}
+
+void HideThread::WaitThreadStop()
+{
+	if (isRunning())
+	{
+		//m_bExitSystem = true;	//关闭系统标志位
+		if (!m_bStopThread)
+		{
+			m_bStopThread = true;
+		}
+		wait();
+	}
+}
+
+
+
+
+WidgetWarning::WidgetWarning(QWidget *parent)
+	: QWidget(parent)
+{
+	setStyleSheet(QString::fromUtf8("background-color: rgb(138,171,140);"));
+
+	bIsShow = false;
+	iWarningType = 1;
+	pHideThread = new HideThread(this);
+	connect(pHideThread,SIGNAL(signal_Move(int,int)),this,SLOT(slots_Move(int,int)));
+	connect(pHideThread,SIGNAL(signal_HideWidget()),this,SLOT(slots_HideWidget()));
+
+	btnClose = new PushButton(this);
+	btnClose->setPicName(QString(":/sysButton/close"));
+	connect(btnClose, SIGNAL(clicked()), this, SLOT(hide()));
+	btnStopWarning = new QPushButton();
+	QPixmap pixmapBtnStop(":/sys/Pause1");
+	btnStopWarning->setPixmap(pixmapBtnStop);
+	btnStopWarning->setFixedSize(pixmapBtnStop.size());
+	btnStopWarning->setFlat(true);
+	//btnStopWarning->setPicName(QString(":/sys/Pause1"));
+	//btnStopWarning->setText(tr("Stop"));
+	connect(btnStopWarning, SIGNAL(clicked()), this, SIGNAL(signals_PauseAlert()));
+	connect(btnStopWarning, SIGNAL(clicked()), this, SLOT(slots_HideWarning()));
+	labelWarningPic = new QLabel();
+	QPixmap pixmapWarning(":/sys/Alert");
+	labelWarningPic->setPixmap(pixmapWarning);
+	labelWarningPic->setFixedSize(pixmapWarning.size());
+
+	labelWarningInfo = new QLabel();
+	QFont font("宋体",20,QFont::DemiBold,false);
+	labelWarningInfo->setFont(font);
+	labelWarningInfo->setText(tr("Alert Info!"));
+	labelWarningInfo->setAlignment(Qt::AlignCenter);
+
+	Init();
+}
+
+WidgetWarning::~WidgetWarning()
+{
+	pHideThread->WaitThreadStop();
+}
+void WidgetWarning::Init()
+{
+	setWindowFlags(Qt::FramelessWindowHint | Qt::Dialog);//去掉标题栏
+	QDesktopWidget* desktopWidget = QApplication::desktop();
+	setMinimumSize(400,300);
+
+	QHBoxLayout *layoutTitle = new QHBoxLayout();
+// 	QSpacerItem *horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+// 	layoutTitle->addItem(horizontalSpacer);
+	layoutTitle->addStretch();
+	layoutTitle->addWidget(btnClose, 0, Qt::AlignTop);
+	layoutTitle->setContentsMargins(0,0,0,0);
+
+	QVBoxLayout *layoutInfo = new QVBoxLayout();
+	layoutInfo->addWidget(labelWarningInfo,Qt::AlignCenter);
+	layoutInfo->addWidget(btnStopWarning,Qt::AlignCenter);
+
+	QHBoxLayout *layoutBody = new QHBoxLayout();
+	layoutBody->addWidget(labelWarningPic,Qt::AlignCenter);
+	layoutBody->addLayout(layoutInfo,Qt::AlignCenter);
+	layoutBody->setContentsMargins(10,0,10,0);
+	layoutBody->setStretch(0,1);
+	layoutBody->setStretch(1,1);
+
+	QVBoxLayout *layoutMain = new QVBoxLayout(this);
+	layoutMain->addLayout(layoutTitle);
+	layoutMain->addLayout(layoutBody);
+	layoutMain->setStretch(1,1);
+	layoutMain->setContentsMargins(0,0,0,0);
+}
+bool WidgetWarning::IsShowWarning()
+{
+	return bIsShow;
+}
+void WidgetWarning::slots_ShowWarning(int warningType, QString warningInfo)
+{
+	iWarningType = warningType;
+	if (bHiding)
+	{
+		pHideThread->m_bStopThread = true;
+		bIsShow = false;
+	}
+
+ 	if (bIsShow)
+ 	{
+ 		return;
+ 	}
+	
+	switch (warningType)
+	{
+	case 1:
+		btnStopWarning->setVisible(true);
+		break;
+	case 2:
+		btnStopWarning->setVisible(false);
+		break;
+	default:
+		break;
+
+	}
+	labelWarningInfo->setText("踢废率不合格");
+	QDesktopWidget* desktopWidget = QApplication::desktop();
+
+	move(desktopWidget->width()-400,desktopWidget->height()-300);
+	show();
+	bIsShow = true;
+	if (pMainFrm->m_sSystemInfo.m_bIsIOCardOK)
+	{
+		pMainFrm->m_vIOCard[0]->m_mutexmIOCard.lock();
+		pMainFrm->m_vIOCard[0]->m_Pio24b.setCardOutput(3,1);
+		pMainFrm->m_vIOCard[0]->m_mutexmIOCard.unlock();
+	}
+}
+void WidgetWarning::slots_HideWarning()
+{
+	if (pMainFrm->m_sSystemInfo.m_bIsIOCardOK)
+	{
+		pMainFrm->m_vIOCard[0]->m_mutexmIOCard.lock();
+		pMainFrm->m_vIOCard[0]->m_Pio24b.setCardOutput(3,0);
+		pMainFrm->m_vIOCard[0]->m_mutexmIOCard.unlock();
+	}
+	if (!bIsShow)
+	{
+		return;
+	}
+	bHiding = true;
+	QDesktopWidget* desktopWidget = QApplication::desktop();
+ 	pHideThread->m_bStopThread = false;
+	pHideThread->start();
+}
+void WidgetWarning::slots_Move(int iPositionX,int iPositionY)
+{
+	move(iPositionX ,iPositionY);
+
+}
+void WidgetWarning::slots_HideWidget()
+{
+	hide();
+	bIsShow = false;
+	bHiding = false;
+
+}

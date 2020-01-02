@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GlasswareDetectSystem", "GlasswareDetectSystem\GlasswareDetectSystem.vcxproj", "{B2209B61-DCA4-45F9-A2CA-F4C1B8A52E34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2209B61-DCA4-45F9-A2CA-F4C1B8A52E34}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B2209B61-DCA4-45F9-A2CA-F4C1B8A52E34}.Debug|x64.ActiveCfg = Debug|x64
+		{B2209B61-DCA4-45F9-A2CA-F4C1B8A52E34}.Debug|x64.Build.0 = Debug|x64
+		{B2209B61-DCA4-45F9-A2CA-F4C1B8A52E34}.Release|Win32.ActiveCfg = Release|Win32
+		{B2209B61-DCA4-45F9-A2CA-F4C1B8A52E34}.Release|Win32.Build.0 = Release|Win32
+		{B2209B61-DCA4-45F9-A2CA-F4C1B8A52E34}.Release|x64.ActiveCfg = Release|x64
+		{B2209B61-DCA4-45F9-A2CA-F4C1B8A52E34}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A42FD11-CA59-4903-9479-E0A9C08C4F6F}
+	EndGlobalSection
+EndGlobal

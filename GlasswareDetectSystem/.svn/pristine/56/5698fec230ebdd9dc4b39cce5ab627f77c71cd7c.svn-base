@@ -1,0 +1,753 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TimeScaleDraw" Collapsed="true">
+    <Position X="26.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAABEAAAACAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>timescaledraw.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CLogFile" Collapsed="true">
+    <Position X="26.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACBAAABAAAAAAAAAAACAAQAAAAAAAAA=</HashCode>
+      <FileName>clogFile.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCombineRlt" Collapsed="true">
+    <Position X="26.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAIAgAAQAAEAAQEACQISBAzAEAACACAADAwAAA=</HashCode>
+      <FileName>CombineResult.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCheckResult" Collapsed="true">
+    <Position X="24.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CombineResult.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMyImage" Collapsed="true">
+    <Position X="33.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgSgICAAEIEAACAAgCJAQAEAAAAAQAACiVSAAISA=</HashCode>
+      <FileName>myImage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CImageException" Collapsed="true">
+    <Position X="23" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAABABAAIAAAAAAAAIAAAAEAACAAABAAAQA=</HashCode>
+      <FileName>myImage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMyQueue" Collapsed="true">
+    <Position X="26.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAAgAAAAAAAAEAAAAAAAAAAAAAgAAAAACAQQAAAA=</HashCode>
+      <FileName>myQueue.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StateTool" Collapsed="true">
+    <Position X="24.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAgAAAAAAAAAgAAAAAAAAAAAAAAAACAAQAAA=</HashCode>
+      <FileName>stateTool.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cErrorTypeInfo" Collapsed="true">
+    <Position X="30" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAABAAAAAAAAAAADAAAAAIAABAAAA=</HashCode>
+      <FileName>stateTool.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMachineSignal" Collapsed="true">
+    <Position X="28.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAACAAAAgAAQAAABAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>stateTool.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CGrabElement" Collapsed="true">
+    <Position X="31.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAIAAAAIAAAAQAGAAAEAAAAAgAAAAIMBAABCAAAA=</HashCode>
+      <FileName>stateTool.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrabberEvent" Collapsed="true">
+    <Position X="24.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgAAAgQAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAIAA=</HashCode>
+      <FileName>stateTool.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IOCardEvent" Collapsed="true">
+    <Position X="30" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAQAAAAQAAAAAAAAAAAAAAAAAAAAAIAAAAIAA=</HashCode>
+      <FileName>stateTool.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSpendTime" Collapsed="true">
+    <Position X="31.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAgAAAAAAAgAAABAAIAAQAAwACAABAAAAAAI=</HashCode>
+      <FileName>stateTool.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ToolButton" Collapsed="true">
+    <Position X="28.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CCAAAACAAAAAAAABBCAAAAAAAAAcAAAAABAAAAAAAAA=</HashCode>
+      <FileName>toolButton.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GlasswareDetectSystem" Collapsed="true">
+    <Position X="23" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AMEqYGhADCCaKwiTDzAowilwSBsEGRkghAFSDVAMmYg=</HashCode>
+      <FileName>glasswaredetectsystem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WidgetTest" Collapsed="true">
+    <Position X="31.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAgEEAAAEBsAeAQCAAUCQAAAVBBECA+AAAACAAAAAUk=</HashCode>
+      <FileName>widget_test.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WidgetTitle" Collapsed="true">
+    <Position X="33.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAgAAoAAAAhQCAAAAAAAAAAAAAAAACAAgAgA=</HashCode>
+      <FileName>widget_title.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Widget_Sample" Collapsed="true">
+    <Position X="5.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAQQAAAAABBAAABAAEAAAAQwAgAACAAAAAACA=</HashCode>
+      <FileName>widget_sample.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WidgetMyCellWidget" Collapsed="true">
+    <Position X="30" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAEAgAQAAAAAQAQAAABAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>widget_mycellwidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Widget_Count" Collapsed="true">
+    <Position X="23" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIBYAAQDDAABAABAgQoAAACAABwAACYAGAAhRggMAJE=</HashCode>
+      <FileName>widget_count.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="widget_info" Collapsed="true">
+    <Position X="24.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAAASBEAAAgASAhEDAIgBgCQDBgAgAABAAAABIIwEgQ=</HashCode>
+      <FileName>widget_info.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMyErrorList" Collapsed="true">
+    <Position X="30" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAABAAQAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAgAAA=</HashCode>
+      <FileName>cmyerrorlist.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DHBaseWidget" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgABAAAAAAEFAAAAAAAAAAAAAAAQAAAAAgAAAA=</HashCode>
+      <FileName>dhbasewidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraStatusLabel" Collapsed="true">
+    <Position X="23" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAEAAIEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>camerasatuslabel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CDetectSpeed" Collapsed="true">
+    <Position X="28.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cdetectspeed.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CountSet" Collapsed="true">
+    <Position X="30" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>countset.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CErrorImageList" Collapsed="true">
+    <Position X="0.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAgAAAABAAAAABAAAAFAAAAAEAAABIBAAAIQ=</HashCode>
+      <FileName>cerrorimagelist.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CHistogram" Collapsed="true">
+    <Position X="33.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAACEACgAAAA=</HashCode>
+      <FileName>chistogram.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserWidget" Collapsed="true">
+    <Position X="30" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAoAAIAAAEAAAAAAAAAAAAAAMAAAQAQAAAAAAAEA=</HashCode>
+      <FileName>userwidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMyLogText" Collapsed="true">
+    <Position X="24.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAEQAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyLogText.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WidgetManagement" Collapsed="true">
+    <Position X="28.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAgAAAAEAQAAKAAAAQAIBCAAAQAAAAEAEgBAAA=</HashCode>
+      <FileName>widget_Management.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Widget_CarveImage" Collapsed="true">
+    <Position X="31.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AppFiHCYSbIYJbBQUIoAEACcEQICAAIyKzAsqVTYEFA=</HashCode>
+      <FileName>Widget_CarveImage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Widget_CarveInfo" Collapsed="true">
+    <Position X="33.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAIAEAAAAAAAgAAAAAAAAYAAAAAAAAAAAAA=</HashCode>
+      <FileName>Widget_CarveInfo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DetectThread" Collapsed="true">
+    <Position X="33.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIBAUwECAIBAAIAAAgQCFEBpiQQAAIQECAAAAgIAAgA=</HashCode>
+      <FileName>detectThread.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIOCard" Collapsed="true">
+    <Position X="24.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAEABQFhACgAEAIAgAAAAABACAAECAAAUACAAAhQAA=</HashCode>
+      <FileName>CIOCard.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WidgetCarveSetting" Collapsed="true">
+    <Position X="26.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAAAAACAAAABAAAABIAAwJAAABAAAALQAAAggIEAAAA=</HashCode>
+      <FileName>Widget_CarveSetting.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMyShape" Collapsed="true">
+    <Position X="28.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IABAAAEAgAAAAAACEAAAAmEAACAAACABFQAAAAggQAg=</HashCode>
+      <FileName>CMyShape.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IOCardThread" Collapsed="true">
+    <Position X="31.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgBgAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>IOCardThread.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMyImageView" Collapsed="true">
+    <Position X="23" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IBkACigCAEAQAAIQAAEAAAAAABAAIAAAAAAAAgAEAAI=</HashCode>
+      <FileName>myImageView.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PushButton" Collapsed="true">
+    <Position X="23" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CCQAAAAAAAAAAEAIBAAAAABAAAAUCAAAAAQAAAAAIAA=</HashCode>
+      <FileName>pushButton.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ImageWidget" Collapsed="true">
+    <Position X="28.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIwAgAkIAAICMBAgLCtQEACgABACAASAoEAAICgoBAA=</HashCode>
+      <FileName>widget_image.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Histogram" Collapsed="true">
+    <Position X="26.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAIAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>MyHistogram.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PieView" Collapsed="true">
+    <Position X="33.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEIAEUAAAABkAAAABAJAAEBFAQBQoAAABBAAAgAMABQ=</HashCode>
+      <FileName>pieview.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WidgetPie" Collapsed="true">
+    <Position X="3" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAwAAAAAAAAAAAAAAAAAEBAAAAAAAAAAAIAIAAA=</HashCode>
+      <FileName>widget_pie.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_CountSet" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ygCIAAAQAZkABBAhCKAIAAAAgAQAKEAAAIIACgAABMA=</HashCode>
+      <FileName>GeneratedFiles\ui_countset.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_UserWidget" Collapsed="true">
+    <Position X="6.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgACAIAHAAAAIABACAAAgAKABAQAIAAAAIAEEUAABEQ=</HashCode>
+      <FileName>GeneratedFiles\ui_userwidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_WidgetTest" Collapsed="true">
+    <Position X="3.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>z8R0AUCBAKABpn8QCGCQBAAnADYcovAQKK0SoUCBrnI=</HashCode>
+      <FileName>GeneratedFiles\ui_widget_test.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_GlasswareDetectSystemClass" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAQAAAAAAAAIAAAAQAIAAAgAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_glasswaredetectsystem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_ImageWidget" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAEBAAAAAAAAAAAQAIAAAAIAAAEAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_image_widget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_Widget_CarveInfo" Collapsed="true">
+    <Position X="3.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASAEAIBWAbBIg6AAGKAQEAUQEgQgZ8AAAoYMKGSADkA=</HashCode>
+      <FileName>GeneratedFiles\ui_Widget_CarveInfo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_widgetManagement" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAEAAACAAAACAAAAQAIAgIAIAAEEABBAA=</HashCode>
+      <FileName>GeneratedFiles\ui_widget_Management.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMyGraphicsView" Collapsed="true">
+    <Position X="31.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQCAAAAABAAAAAAAAAAABAAAAQIAQCAAAAAAAAAAA=</HashCode>
+      <FileName>cmygraphicsview.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::CountSet" Collapsed="true">
+    <Position X="9.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_countset.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::UserWidget" Collapsed="true">
+    <Position X="6.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_userwidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::WidgetTest" Collapsed="true">
+    <Position X="3.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_widget_test.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::GlasswareDetectSystemClass" Collapsed="true">
+    <Position X="6.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_glasswaredetectsystem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::ImageWidget" Collapsed="true">
+    <Position X="0.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_image_widget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::Widget_CarveInfo" Collapsed="true">
+    <Position X="3.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_Widget_CarveInfo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::widgetManagement" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_widget_Management.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="sResult" Collapsed="true">
+    <Position X="23" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAgAgCAAEAAAAAAAAAAA=</HashCode>
+      <FileName>CombineResult.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_SelectPoint" Collapsed="true">
+    <Position X="13.5" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAIAEAAAAAEAA=</HashCode>
+      <FileName>common.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_RectangleShape" Collapsed="true">
+    <Position X="9.5" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAABAAAAAAAAAQABAAAAAACA=</HashCode>
+      <FileName>common.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_IOSignal" Collapsed="true">
+    <Position X="18.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAIAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>common.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_ResultInfo" Collapsed="true">
+    <Position X="18.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAABCAAAAAAAAAIAAEBAAAAAAAA=</HashCode>
+      <FileName>common.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_ConfigIOCardInfo" Collapsed="true">
+    <Position X="17.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAQAABAAAABAAA=</HashCode>
+      <FileName>ConfigInfo.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_StatisticsInfo" Collapsed="true">
+    <Position X="17.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAACAAAAAAAAAAQAAQAAA=</HashCode>
+      <FileName>ConfigInfo.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_SampleInfo" Collapsed="true">
+    <Position X="17.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEABAAAAAQAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>ConfigInfo.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_ErrorInfo" Collapsed="true">
+    <Position X="5.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAIAQAAAAAAAAAAASAAAAAAAAAEACAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConfigInfo.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_CorveToCamera" Collapsed="true">
+    <Position X="1.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAABAwAAAEAAAAAAIA=</HashCode>
+      <FileName>ConfigInfo.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_realCamInfo" Collapsed="true">
+    <Position X="13.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BCAACAEAUAAAhAQACQAQAACCKAAQgSAgAAKIAEAiEQA=</HashCode>
+      <FileName>ConfigInfo.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_ImageLocInfo" Collapsed="true">
+    <Position X="9.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConfigInfo.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_carvedCamInfo" Collapsed="true">
+    <Position X="14.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAyABUAUQAABAAAEAAQAAACAAAAAC4AAACIABCiAAA=</HashCode>
+      <FileName>ConfigInfo.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_SystemInfo" Collapsed="true">
+    <Position X="14.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAIVEAGESBAAEAEAgAgCAQCAACAEAAAEAElgCEAsAAA=</HashCode>
+      <FileName>ConfigInfo.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_RunningInfo" Collapsed="true">
+    <Position X="13.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ARAAIAQEAAoAIAgAAAAAAACACAAAASkABABCAAAAQAA=</HashCode>
+      <FileName>ConfigInfo.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_ConfigInfo" Collapsed="true">
+    <Position X="10.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAABAAAAAgQAAAAAEAAACAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConfigInfo.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_MSGBoxInfo" Collapsed="true">
+    <Position X="5.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>stateTool.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_IOCardErrorInfo" Collapsed="true">
+    <Position X="10.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAEAEAAAAAAAAQAA=</HashCode>
+      <FileName>CIOCard.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_ResultSignal" Collapsed="true">
+    <Position X="1.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>CIOCard.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="LANGUAGE" Collapsed="true">
+    <Position X="1.5" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>common.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="s_SelectPoint" Collapsed="true">
+    <Position X="13.5" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>common.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="s_RectangleShape" Collapsed="true">
+    <Position X="9.5" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>common.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="s_IOSignal" Collapsed="true">
+    <Position X="20.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>common.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="s_ResultInfo" Collapsed="true">
+    <Position X="18.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>common.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="s_ConfigIOCardInfo" Collapsed="true">
+    <Position X="17.5" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConfigInfo.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="s_StatisticsInfo" Collapsed="true">
+    <Position X="17.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConfigInfo.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="s_SampleInfo" Collapsed="true">
+    <Position X="17.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConfigInfo.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="s_ErrorInfo" Collapsed="true">
+    <Position X="5.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConfigInfo.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="sCorveToCamera" Collapsed="true">
+    <Position X="1.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConfigInfo.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="s_RealCamInfo" Collapsed="true">
+    <Position X="13.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConfigInfo.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="s_ImageLocInfo" Collapsed="true">
+    <Position X="9.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConfigInfo.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="s_CarvedCamInfo" Collapsed="true">
+    <Position X="14.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConfigInfo.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="s_SystemInfo" Collapsed="true">
+    <Position X="14.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConfigInfo.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="s_RunningInfo" Collapsed="true">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConfigInfo.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="s_ConfigInfo" Collapsed="true">
+    <Position X="10.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConfigInfo.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="s_MSGBoxInfo" Collapsed="true">
+    <Position X="5.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>stateTool.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="s_IOCardErrorInfo" Collapsed="true">
+    <Position X="10.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CIOCard.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="s_ResultSignal" Collapsed="true">
+    <Position X="1.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CIOCard.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="__unnamed_enum_0011_1" Collapsed="true">
+    <Position X="1.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAIAAAA=</HashCode>
+      <FileName>common.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="e_CurrentMainPage" Collapsed="true">
+    <Position X="24.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAIAAAAAAAAEAAAAAAAAAAAAAAAQAABAAAAIAA=</HashCode>
+      <FileName>common.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="e_SaveLogType" Collapsed="true">
+    <Position X="23" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAACAAAACAAAAAAAAAAAAAAIQAQAAAAg=</HashCode>
+      <FileName>common.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="e_GrabImageType" Collapsed="true">
+    <Position X="30" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>common.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="e_SaveImageType" Collapsed="true">
+    <Position X="33.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAgAAAAAAECACAA=</HashCode>
+      <FileName>common.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="e_CameraType" Collapsed="true">
+    <Position X="23" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAADAIQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>common.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="e_DrawStatus" Collapsed="true">
+    <Position X="28.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAQIAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>common.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="e_DrawSelect" Collapsed="true">
+    <Position X="26.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAIAAAAAAAAAAAAAAAAAgAAQAAAA=</HashCode>
+      <FileName>common.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="e_LoginStatus" Collapsed="true">
+    <Position X="31.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAQAAAABAA=</HashCode>
+      <FileName>userwidget.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

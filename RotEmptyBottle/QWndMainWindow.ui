@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QDlgMainWindow</class>
+ <widget class="QMainWindow" name="QDlgMainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>482</width>
+    <height>515</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>3000</width>
+    <height>3000</height>
+   </size>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>0</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Maximum</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>10</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QFrame" name="imgFrame">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>10</width>
+            <height>10</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>2000</width>
+            <height>2000</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>ArrowCursor</cursorShape>
+          </property>
+          <property name="mouseTracking">
+           <bool>true</bool>
+          </property>
+          <property name="acceptDrops">
+           <bool>true</bool>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>10</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Maximum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>0</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>50</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>黑体</family>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <property name="lineWidth">
+           <number>1</number>
+          </property>
+          <property name="midLineWidth">
+           <number>1</number>
+          </property>
+          <property name="text">
+           <string>Check
+Process</string>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::AutoText</enum>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="MyGroupBoxProcess" name="processBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>10</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="title">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>13</width>
+            <height>13</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnTest">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>50</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="sizeIncrement">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Test</string>
+          </property>
+          <property name="shortcut">
+           <string>F1</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>13</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnSaveModel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>SaveModel</string>
+          </property>
+          <property name="shortcut">
+           <string>Ctrl+S</string>
+          </property>
+          <property name="autoDefault">
+           <bool>true</bool>
+          </property>
+          <property name="default">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnExportModel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>ExportModel</string>
+          </property>
+          <property name="shortcut">
+           <string>Ctrl+E</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnImportModel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>ImportModel</string>
+          </property>
+          <property name="shortcut">
+           <string>Ctrl+I</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnCopyModel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>CopyModel</string>
+          </property>
+          <property name="shortcut">
+           <string>Ctrl+C</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>13</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="MyToolBar" name="imgToolBar">
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="acceptDrops">
+    <bool>true</bool>
+   </property>
+   <property name="windowTitle">
+    <string>ImgToolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::LeftToolBarArea|Qt::RightToolBarArea|Qt::TopToolBarArea</set>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>25</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="openImgAction"/>
+   <addaction name="saveImgAction"/>
+   <addaction name="separator"/>
+   <addaction name="prevImgAction"/>
+   <addaction name="nextImgAction"/>
+   <addaction name="separator"/>
+   <addaction name="oriImgAction"/>
+   <addaction name="drawImgAction"/>
+   <addaction name="separator"/>
+   <addaction name="resetShapeAction"/>
+   <addaction name="measureImgAction"/>
+   <addaction name="separator"/>
+   <addaction name="continueShowAction"/>
+   <addaction name="stopAtErrorShowAction"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="openImgAction">
+   <property name="icon">
+    <iconset resource="resurce.qrc">
+     <normaloff>:/Resources/images/imgTool/openImg.png</normaloff>:/Resources/images/imgTool/openImg.png</iconset>
+   </property>
+   <property name="text">
+    <string>OpenImage</string>
+   </property>
+   <property name="toolTip">
+    <string>Open an image from a local folder(Alt+O)</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+O</string>
+   </property>
+  </action>
+  <action name="saveImgAction">
+   <property name="icon">
+    <iconset resource="resurce.qrc">
+     <normaloff>:/Resources/images/imgTool/saveImg.png</normaloff>:/Resources/images/imgTool/saveImg.png</iconset>
+   </property>
+   <property name="text">
+    <string>SaveImage</string>
+   </property>
+   <property name="toolTip">
+    <string>Save the current image to a local folder(Alt+S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+S</string>
+   </property>
+  </action>
+  <action name="prevImgAction">
+   <property name="icon">
+    <iconset resource="resurce.qrc">
+     <normaloff>:/Resources/images/imgTool/previousImg.png</normaloff>:/Resources/images/imgTool/previousImg.png</iconset>
+   </property>
+   <property name="text">
+    <string>PreImage</string>
+   </property>
+   <property name="toolTip">
+    <string>Previous image of the current image in the opening floder(Alt+P)</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+P</string>
+   </property>
+  </action>
+  <action name="nextImgAction">
+   <property name="icon">
+    <iconset resource="resurce.qrc">
+     <normaloff>:/Resources/images/imgTool/nextImg.png</normaloff>:/Resources/images/imgTool/nextImg.png</iconset>
+   </property>
+   <property name="text">
+    <string>NextImage</string>
+   </property>
+   <property name="toolTip">
+    <string>Next image of the current image in the opening floder(Alt+N)</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+N</string>
+   </property>
+  </action>
+  <action name="oriImgAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resurce.qrc">
+     <normaloff>:/Resources/images/imgTool/originalImg.png</normaloff>:/Resources/images/imgTool/originalImg.png</iconset>
+   </property>
+   <property name="text">
+    <string>OriImage</string>
+   </property>
+   <property name="toolTip">
+    <string>Show original Image(Alt+Y)</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Y</string>
+   </property>
+  </action>
+  <action name="drawImgAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resurce.qrc">
+     <normaloff>:/Resources/images/imgTool/paintedImg.png</normaloff>:/Resources/images/imgTool/paintedImg.png</iconset>
+   </property>
+   <property name="text">
+    <string>ShapeAndImage</string>
+   </property>
+   <property name="toolTip">
+    <string>Show shape in original Image(Alt+D)</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+D</string>
+   </property>
+  </action>
+  <action name="measureImgAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resurce.qrc">
+     <normaloff>:/Resources/images/imgTool/measureImg.png</normaloff>:/Resources/images/imgTool/measureImg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Measure</string>
+   </property>
+   <property name="toolTip">
+    <string>Measurement distance between the two pixels(Alt + M)</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+M</string>
+   </property>
+  </action>
+  <action name="continueShowAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resurce.qrc">
+     <normaloff>:/Resources/images/imgTool/continueShow.png</normaloff>
+     <normalon>:/Resources/images/imgTool/stopShow.png</normalon>:/Resources/images/imgTool/continueShow.png</iconset>
+   </property>
+   <property name="text">
+    <string>ContinueShow</string>
+   </property>
+   <property name="toolTip">
+    <string>Continuously display the current detection image (Alt + C)</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+C</string>
+   </property>
+  </action>
+  <action name="stopAtErrorShowAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resurce.qrc">
+     <normaloff>:/Resources/images/imgTool/stopAtErrorShow.png</normaloff>
+     <normalon>:/Resources/images/imgTool/stopShow.png</normalon>:/Resources/images/imgTool/stopAtErrorShow.png</iconset>
+   </property>
+   <property name="text">
+    <string>StopAtError</string>
+   </property>
+   <property name="toolTip">
+    <string>Continuously display the current detection image, automatically stop at error occurred(Alt+X)</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+X</string>
+   </property>
+  </action>
+  <action name="resetShapeAction">
+   <property name="icon">
+    <iconset resource="resurce.qrc">
+     <normaloff>:/Resources/images/imgTool/resetShape.png</normaloff>:/Resources/images/imgTool/resetShape.png</iconset>
+   </property>
+   <property name="text">
+    <string>ResetShape</string>
+   </property>
+   <property name="toolTip">
+    <string>Reset the current shape to the default shape(Alt+R)</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+R</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MyGroupBoxProcess</class>
+   <extends>QGroupBox</extends>
+   <header>mygroupboxprocess.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MyToolBar</class>
+   <extends>QToolBar</extends>
+   <header>mytoolbar.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resurce.qrc"/>
+ </resources>
+ <connections/>
+</ui>

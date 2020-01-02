@@ -1,0 +1,154 @@
+#include "CameraOffLineMonitor.h"
+
+#include  "qt_windows.h"
+#include "glasswaredetectsystem.h"
+#include <QMessageBox>
+
+extern GlasswareDetectSystem *pMainFrm;
+
+CameraOffLineMonitor::CameraOffLineMonitor(QObject *parent)
+	: QThread(parent)
+{
+	iCameraCount = 0;
+	iRealCameraCount = 0;
+	for (int i=0; i<50; i++)
+	{
+		nCameraState[i] = -1;
+	}
+	bMonitor = true;
+}
+
+CameraOffLineMonitor::~CameraOffLineMonitor()
+{
+
+}
+bool CameraOffLineMonitor::GetCameraMarkNo()
+{
+	// TODO: Add extra initialization here
+	bool bCameraOffLine = false;
+	int nHigh, nLow;
+	for (int i=0; i<pMainFrm->m_sSystemInfo.iRealCamCount;i++)
+	{
+		if(pMainFrm->m_sRealCamInfo[i].m_iGrabType == 1)
+		{
+			if (!((CDHGrabberAVT*)pMainFrm->m_sRealCamInfo[i].m_pGrabber)->AVTGetCamGuid(nHigh, nLow))
+			{
+				bCameraOffLine = true;
+				nCameraState[i] = 1;
+			}
+		}
+	}
+	return bCameraOffLine;
+// 	FGNODEINFO  NodeInfo[32];
+// 	UINT32      NodeCnt=0,i=0,j=0,ListCnt=0,Ix=0;
+// 	UINT32      Result;
+// 	CAMERAINFO *pCameraInfo;
+// 	bool        MustRemove;
+// 	FGINIT  Arg;
+// 	char Buffer[32];
+// 	try
+// 	{
+// 		if(FGGetHostLicenseRequest(Buffer,sizeof(Buffer))==FCE_NOERROR)
+// 		{
+// 			QString str= QString(QLatin1String(Buffer));
+// 		}
+// 		// Always put window to upper left corner of desktop	
+// 		// Init our grabber module
+// 		memset(&Arg,0,sizeof(FGINIT));	
+// //		Result=FGInitModule(&Arg);
+// 		Result=FGGetNodeList(NodeInfo,sizeof(NodeInfo)/sizeof(FGNODEINFO),&NodeCnt);
+// 		if(Result!=FCE_NOERROR)
+// 			signals_MessageBox("Failed to initail camera!");
+// 		iCameraCount = NodeCnt;
+// 		if (iCameraCount = iRealCameraCount)
+// 		{
+// 			return true;
+// 		}
+// 		else
+// 		{
+// 			QString strValue;
+// 			for(i=0;i<NodeCnt;i++)
+// 			{
+// 				if(NodeInfo[i].Guid.High || NodeInfo[i].Guid.Low)
+// 				{
+// 					strValue = QString::number(NodeInfo[i].Guid.Low);
+// 					strCameraMarkNo[i] = QString("673537") + strValue + QString("0609");
+// 				}
+// 			}
+// 			return false;
+// 		}
+// 
+// 	}
+// 	catch(...)
+// 	{
+// 		signals_MessageBox("Init CameraOffline Thread Failed!");
+// 		return true;
+// 	}
+	//	emit signals_addCameraNumber();
+//	return;  // return TRUE  unless you set the focus to a control
+}
+void CameraOffLineMonitor::findOfflineCameraMarkNumber()
+{
+	for (int i=0; i<iRealCameraCount; i++)
+	{
+		for (int j=0; j<iCameraCount;j++)
+		{
+			if (strUsedCameraMarkNo[i] == strCameraMarkNo[j])
+			{
+				nCameraState[i] = 1;
+				break;
+			}
+		}
+		nCameraState[i]=0;
+	}
+}
+
+void CameraOffLineMonitor::run()
+{
+	bMonitor = true;
+
+	while (bMonitor)
+	{
+		pMainFrm->m_mutexmGrab.lock();						//Ïà»ú²Ù×÷»¥³â
+		bool bRet = GetCameraMarkNo();
+		pMainFrm->m_mutexmGrab.unlock();
+		if (bRet)
+		{
+//			findOfflineCameraMarkNumber();
+			emit signals_CameraOffLine(true);
+		}
+		else
+		{
+			emit signals_CameraOffLine(false);
+		}
+		Sleep(6000);
+	}
+}
+void CameraOffLineMonitor::stopMonitor()
+{
+	bMonitor = false;
+}
+
+void CameraOffLineMonitor::setUsedCameraMarkNumber(QList<QString> listStrCameraMarkNumber,int nRealCameraNumber)
+{
+	iRealCameraCount = nRealCameraNumber;
+	for (int i=0; i<nRealCameraNumber; i++)
+	{
+		strUsedCameraMarkNo[i] = listStrCameraMarkNumber.at(i);
+	}
+
+}
+
+void CameraOffLineMonitor::getOfflineCameraMarkNumber(QList<int> listnOffLineCameraNumber)
+{
+	listnOffLineCameraNumber.clear();
+	for (int i=0; i<iRealCameraCount; i++)
+	{
+		if (0 == nCameraState[i])
+		{
+			listnOffLineCameraNumber.append(i);
+		}
+	}
+}
+
+

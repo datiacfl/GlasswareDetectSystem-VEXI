@@ -1,0 +1,70 @@
+<RCC>
+    <qresource prefix="/sysButton">
+        <file alias="close">Resources/sys/close.png</file>
+        <file alias="close_enter">Resources/sys/close_enter.png</file>
+        <file alias="close_pressed">Resources/sys/close_pressed.png</file>
+        <file alias="min">Resources/sys/min.png</file>
+        <file alias="min_enter">Resources/sys/min_enter.png</file>
+        <file alias="min_pressed">Resources/sys/min_pressed.png</file>
+        <file alias="arrow">Resources/sys/arrow.png</file>
+        <file alias="carve">Resources/sys/carve.png</file>
+        <file alias="list">Resources/sys/list.png</file>
+        <file alias="turnImage">Resources/sys/turnImage.png</file>
+        <file alias="arrowLeft">Resources/sys/arrowLeft.png</file>
+        <file alias="arrowright">Resources/sys/arrowRight.png</file>
+    </qresource>
+    <qresource prefix="/sys">
+        <file alias="icon">Resources/sys/Icon.png</file>
+        <file alias="UserBeforeLogin">Resources/sys/User.png</file>
+        <file alias="UserAfterLogin">Resources/sys/User2.png</file>
+        <file alias="Alert">Resources/Alert.png</file>
+        <file alias="Pause">Resources/Pause.png</file>
+        <file alias="Pause1">Resources/Pause1.png</file>
+    </qresource>
+    <qresource prefix="/toolWidget">
+        <file alias="algset">Resources/toolwidget/algset.png</file>
+        <file alias="bottle">Resources/toolwidget/bottle.png</file>
+        <file alias="carve">Resources/toolwidget/Carve.png</file>
+        <file alias="count">Resources/toolwidget/count.png</file>
+        <file alias="management">Resources/toolwidget/management.png</file>
+        <file alias="set">Resources/toolwidget/set.png</file>
+        <file alias="start">Resources/toolwidget/start.png</file>
+        <file alias="stop">Resources/toolwidget/stop.png</file>
+        <file alias="home">Resources/toolwidget/home1.png</file>
+        <file alias="daheng">Resources/toolwidget/daheng.png</file>
+        <file alias="exit">Resources/toolwidget/exit.png</file>
+        <file alias="clear">Resources/toolwidget/Clear.png</file>
+        <file alias="debug">Resources/toolwidget/DeBug.png</file>
+        <file alias="PLC">Resources/toolwidget/PLC.png</file>
+    </qresource>
+    <qresource prefix="/loading">
+        <file>Resources/loading.png</file>
+        <file alias="loading">Resources/loading2.png</file>
+    </qresource>
+    <qresource prefix="/toolButton">
+        <file alias="green">Resources/toolwidget/green.png</file>
+        <file alias="image">Resources/toolwidget/image.png</file>
+        <file alias="red">Resources/toolwidget/info.png</file>
+        <file alias="orange">Resources/toolwidget/orange.png</file>
+        <file alias="yellow">Resources/toolwidget/yellow.png</file>
+        <file alias="blue">Resources/toolwidget/blue.png</file>
+    </qresource>
+    <qresource prefix="/flags">
+        <file>Resources/Flags/China.png</file>
+        <file>Resources/Flags/England.png</file>
+    </qresource>
+    <qresource prefix="/pushButton">
+        <file alias="following_enter">Resources/pushbotton/following_enter.png</file>
+        <file alias="following_pressed">Resources/pushbotton/following_press.png</file>
+        <file alias="previous_enter">Resources/pushbotton/previos_enter.png</file>
+        <file alias="previous_pressed">Resources/pushbotton/previous_press.png</file>
+        <file alias="startShow_enter">Resources/pushbotton/startshow_enter.png</file>
+        <file alias="startShow_pressed">Resources/pushbotton/startshow_press.png</file>
+        <file alias="following">Resources/pushbotton/following.png</file>
+        <file alias="previous">Resources/pushbotton/previos.png</file>
+        <file alias="startShow">Resources/pushbotton/startshow.png</file>
+        <file alias="stopShow">Resources/pushbotton/stopshow.png</file>
+        <file alias="stopShow_enter">Resources/pushbotton/stopshow_enter.png</file>
+        <file alias="stopShow_pressed">Resources/pushbotton/stopshow_press.png</file>
+    </qresource>
+</RCC>

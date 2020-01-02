@@ -1,0 +1,110 @@
+#ifndef COMBINERESULT_H
+#define COMBINERESULT_H
+
+#include "stateTool.h"
+
+//#include "afxmt.h"
+
+struct sResult {
+	int iResult;						//当前机器号的综合结果
+	int b_Rlts[CAMERA_MAX_COUNT];		//存储结果的数组
+	bool b_Checked[CAMERA_MAX_COUNT];	//已经输入的结果的个数
+	s_ErrorPara *sErrorPara[CAMERA_MAX_COUNT];
+	//int i_RltCount;     //一个队列触发相机的个数
+
+	//int i_bMouth;		//瓶口是否报错
+	//int i_bPunt;		//瓶底是否报错
+	//int i_bBody;		//瓶身是否报错
+	//int i_bStress;		//应力是否报错
+	//int iMaxErrorType;	//最大错误类型
+	//int iMaxErrorArea;	//最大错误面积
+	//DWORD i_QeenNum;	//当前队列个数
+	//int iSignalNum;		//接口卡机器号
+
+ 	sResult()
+ 	{	
+		iResult = 0;		//当前机器号的综合结果
+
+ 		for (int i = 0;i < CAMERA_MAX_COUNT; i++)
+ 		{
+ 			b_Rlts[i] = -1;
+			b_Checked[i] = false;
+ 		}
+ 
+ 	}
+};
+
+class CCombineRlt
+{
+public:
+ 	QMutex m_MutexCombin;
+
+	int i_CameraCount;
+	bool b_CombinCamera[CAMERA_MAX_COUNT];			//对应相机是否需要综合
+	int i_StopCheckCamera[CAMERA_MAX_COUNT];
+
+ 	int m_nPrePos;//上次添加结果节点的图像号d
+ 	int m_iSysType;
+    int m_iLatestImageNo;
+	int m_iLatestErrorNo;
+	sResult m_Rlts[256];
+	int iErrorType[256];
+	s_ErrorPara sErrorPara[256];//综合后的缺陷信息
+	int iErrorCamera[256];		//综合后的缺陷最严重的相机
+	//DWORD m_iBodyCount;
+	//DWORD m_iMouthCount;
+	//DWORD m_iPuntCount;
+	//DWORD m_iStressCount;
+
+public:
+
+	CCombineRlt();
+	~CCombineRlt();
+
+	void CombineRlt(int iCombineCount,int iGrabCountInQueen);
+	void Inital(int iGrabCountInQueen);
+
+	void CombineRlt(int iCombineCount,int iGrabCountInQueen,int iRltCount);
+	void SetCombineCamera(int iCamera,bool bIfCombine);
+	int AddResult(int iSignalNum,int CameraNum,int tmpResult);
+	bool ConbineResult(int iSignalNum,int CameraCount,int &bCombineRlt);
+	void RemovAllResult();
+	void RemoveOneResult(int iSignalNum);	
+
+	void AddError(int iSignalNum,int CameraNum,s_ErrorPara tempsErrorPara);
+	s_ErrorPara ConbineError(int iSignalNum);
+	void CCombineRlt::RemovAllError();
+	void CCombineRlt::RemoveOneError(int iSignalNum);
+
+	int ErrorType(int iImgNo);
+	int ErrorCamera(int iImgNo);
+};
+
+class CCheckResult
+{
+// public:
+// 	//	CCriticalSection m_csRW;
+// 	DWORD m_iBodyCount;
+// 	DWORD m_iMouthCount;
+// 	DWORD m_iPuntCount;
+// 	DWORD m_iStressCount;
+// 	int i_CameraCount;
+// 	int m_nPrePos;//上次添加结果节点的图像号d
+// 	int m_iSysType;
+// 	//	bool m_bMissImage;//上次是否有缺图
+// 	sResult m_Rlts[256];
+// 
+// 	CCheckResult()
+// 	{
+// 		m_iBodyCount = 0;
+// 		m_iMouthCount = 0;
+// 		m_iPuntCount = 0;
+// 		m_iStressCount = 0;
+// 		m_iSysType = 0;
+// 	};
+// 	~CCheckResult()
+// 	{
+// 	};
+};
+
+#endif // COMBINERESULT_H

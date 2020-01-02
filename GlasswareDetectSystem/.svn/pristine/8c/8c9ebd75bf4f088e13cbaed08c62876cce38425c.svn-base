@@ -1,0 +1,85 @@
+#ifndef DETECTTHREAD_H
+#define DETECTTHREAD_H
+
+#include <QThread>
+#include "stateTool.h"
+#pragma once 
+// class GlasswareDetectSystem;
+
+class DetectThread : public QThread
+{
+	Q_OBJECT
+
+public:
+	DetectThread(QObject *parent);
+	~DetectThread();
+public:
+	void run();
+	//BOOL Rotate270Image(PBYTE m_pImageBuff,int m_lImageWidth,int m_lImageHeight);
+	void WaitThreadStop();
+public:
+	int ThreadNumber;					//线程号，对应相机号
+	int iCamera;
+	int iImageNo;
+	CDetectElement DetectElement;
+signals:
+	void signals_updateActiveImg(int nCamNo,int nImgNo,double dCostTime,int tmpResult);
+	void signals_updateCheckInfo(int IOCardNum,int checkResult,int nGrabImageCount,int type = 0);
+	void signals_AddErrorTableView(int nCamSN,int nSignalNo,int nErrorType);
+	void signals_upDateList(int iCam,int iErrorType);
+	void signals_upDateCamera(int nCam,int nMode = 0);
+	void signals_updateCameraFailureRate();
+	void signals_updateImage(QImage*, QString, QString, QString, QString, QList<QRect> ,int );
+	void signals_ShowDebugLog(QString str,QColor color = Qt::black);
+private:
+	void DetectNormal(CGrabElement *pElement=NULL);
+	void DetectStress(CGrabElement *pElement=NULL);
+	void rotateImage(CGrabElement *pElement);
+	void checkImage(CGrabElement *pElement,int iCheckMode);
+	bool getCheckResult(CGrabElement *pElement);
+
+	void kickOutSample(int nSignalNo, int result);
+	void kickOutBad(int nSignalNo);
+	void KickOutIOCard0(int nSignalNo,int tmpResult);
+	void KickOutIOCard1(int nSignalNo,int tmpResult);
+
+	void saveImage(CGrabElement *pElement);
+	void addErrorImageList(CGrabElement *pElement);
+	void upDateState(QImage* myImage, int signalNo,double costTime,QList<QRect>, int);
+
+// 	bool Rotate90Image(char* m_pImageBuff,int m_lImageWidth,int m_lImageHeight);
+
+private:
+
+	int iStressCamera;
+	bool m_bStopThread;					//结束检测
+// 	bool bIsWaitLocPos;
+
+	bool bCheckResult[CAMERA_MAX_COUNT];
+	int iErrorType;
+	int iMaxErrorType;
+	int iMaxErrorArea;
+
+	bool isShowImage[CAMERA_MAX_COUNT];
+	bool bIsStress;
+//	int iGetSampleIOCard[256];
+// 	bool bIsGetSample[256];
+
+
+	CSpendTime waitLocPos;
+	CSpendTime WholeThread;
+	CSpendTime checkTimecost;
+	CSpendTime showImageDelay[CAMERA_MAX_COUNT];//显示错误图像延时
+	
+	QDir *dirSaveImagePath;
+	//调用算法
+	s_AlgCInP sAlgCInp;						//检测输入参数
+// 	s_AlgCInP sAlgCInpStress;						//检测输入参数
+	s_AlgCheckResult *pAlgCheckResult;		//返回检测结果结构体
+	s_Status  sReturnStatus;				// 函数执行状态信息
+
+// 	QList<QRect>		listErrorRectList;		// 算法返回的错误矩形框链表
+
+};
+
+#endif // DetectThread_H

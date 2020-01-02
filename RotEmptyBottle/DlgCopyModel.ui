@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CDlgCopyModel</class>
+ <widget class="QDialog" name="CDlgCopyModel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>294</width>
+    <height>345</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Copy Model Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnGroup">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Group</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normalon>:/Resources/images/copyModel/config.png</normalon>
+        </iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupToWhere">
+     <property name="title">
+      <string>Copy the current camera to:</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QRadioButton" name="radioGroup1">
+          <property name="text">
+           <string>Group1</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioGroup2">
+          <property name="text">
+           <string>Group2</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioGroup3">
+          <property name="text">
+           <string>Group3</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioGroup4">
+          <property name="text">
+           <string>Group4</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupContent">
+     <property name="title">
+      <string>CopyContent:</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QRadioButton" name="radioPara">
+          <property name="text">
+           <string>Parameter</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioAll">
+          <property name="text">
+           <string>All</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioCheckItems">
+          <property name="text">
+           <string>CheckItems</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>88</width>
+            <height>21</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBoxCheckItems">
+     <property name="title">
+      <string>CheckItems:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelDetail">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>楷体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QPushButton" name="btnStart">
+       <property name="text">
+        <string>Start</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QProgressBar" name="progressBar">
+       <property name="value">
+        <number>24</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnClose">
+       <property name="text">
+        <string>Close</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>0</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>radioGroup1</tabstop>
+  <tabstop>radioGroup2</tabstop>
+  <tabstop>radioGroup3</tabstop>
+  <tabstop>radioGroup4</tabstop>
+  <tabstop>radioPara</tabstop>
+  <tabstop>radioAll</tabstop>
+  <tabstop>btnStart</tabstop>
+  <tabstop>btnClose</tabstop>
+  <tabstop>btnGroup</tabstop>
+ </tabstops>
+ <resources>
+  <include location="resurce.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btnClose</sender>
+   <signal>clicked()</signal>
+   <receiver>CDlgCopyModel</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>283</x>
+     <y>255</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>180</x>
+     <y>257</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioCheckItems</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>groupBoxCheckItems</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>183</x>
+     <y>133</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>183</x>
+     <y>162</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

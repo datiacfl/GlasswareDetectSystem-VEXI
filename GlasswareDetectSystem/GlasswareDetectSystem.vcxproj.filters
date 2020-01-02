@@ -1,0 +1,634 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{0b57a21e-cb9b-44c8-9b1a-4e9e237303ca}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{5807929a-68d7-442c-880e-09a1961925fc}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glasswaredetectsystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_glasswaredetectsystem.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_glasswaredetectsystem.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_glasswaredetectsystem.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="reportingHook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stateTool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_pushButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_pushButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="pushButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="toolButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clogFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="detectThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_detectThread.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_detectThread.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="myQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Widget_CarveInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Widget_CarveInfo.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Widget_CarveInfo.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Widget_CarveSetting.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Widget_CarveSetting.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Widget_CarveSetting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Widget_CarveImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Widget_CarveImage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Widget_CarveImage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="CIOCard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CIOCard.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CIOCard.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="widget_image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_widget_image.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_widget_image.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_widget_Management.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_widget_Management.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="CombineResult.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmygraphicsview.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_cmygraphicsview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_cmygraphicsview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="widget_info.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_widget_info.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_widget_info.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="cmyerrorlist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="widget_Management.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="widget_mycellwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_widget_mycellwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_widget_mycellwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="dhbasewidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_dhbasewidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_dhbasewidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="userwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_userwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_userwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="timescaledraw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="camerasatuslabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_camerasatuslabel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_camerasatuslabel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="widget_sample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_widget_sample.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_widget_sample.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="cdetectspeed.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_cdetectspeed.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_cdetectspeed.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_widget_title.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_widget_title.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="widget_title.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="widget_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_widget_test.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_widget_test.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="countset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_countset.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_countset.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="cerrorimagelist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_cerrorimagelist.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_cerrorimagelist.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="widget_title.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLogText.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MyLogText.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MyLogText.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="chistogram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_chistogram.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_chistogram.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="MyHistogram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pieview.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_pieview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_pieview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_widget_pie.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_widget_pie.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="widget_pie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="myimageshowitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_myimageshowitem.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_myimageshowitem.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="widget_errortype.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_widget_errortype.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_widget_errortype.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="widget_camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_widget_camera.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_widget_camera.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="mytableview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_mytableview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_mytableview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="widget_debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_widget_debug.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_widget_debug.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="widget_plc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_widget_plc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_widget_plc.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="widgetwarning.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_widgetwarning.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_widgetwarning.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="widget_count.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_widget_count.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_widget_count.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="UserManegeWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_UserManegeWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_UserManegeWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Widget_CameraPosition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Widget_CameraPosition.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Widget_CameraPosition.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraOffLineMonitor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CameraOffLineMonitor.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CameraOffLineMonitor.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleCameraPic.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="glasswaredetectsystem.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="glasswaredetectsystem.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="glasswaredetectsystem.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="image_widget.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="pushButton.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="detectThread.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Widget_CarveInfo.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Widget_CarveInfo.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Widget_CarveSetting.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Widget_CarveImage.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CIOCard.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="widget_image.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="widget_Management.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="widget_Management.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="cmygraphicsview.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="widget_info.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="cmyerrorlist.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="widget_mycellwidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dhbasewidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="userwidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="userwidget.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="camerasatuslabel.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="widget_sample.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="cdetectspeed.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="widget_title.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="widget_test.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="widget_test.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="countset.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="countset.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="cerrorimagelist.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MyLogText.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="chistogram.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="pieview.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="widget_pie.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="myimageshowitem.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="widget_errortype.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="widget_camera.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mytableview.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="widget_debug.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="widget_plc.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="widgetwarning.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="widget_count.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="UserManegeWidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="UserManegeWidget.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Widget_userManege.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Widget_CameraPosition.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Widget_CameraPosition.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CameraOffLineMonitor.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ClassDiagram1.cd" />
+    <CustomBuild Include="ClassDiagram2.cd" />
+    <CustomBuild Include="icon1.ico" />
+    <CustomBuild Include="icon2.ico" />
+    <CustomBuild Include="resources\icon2.ico" />
+    <CustomBuild Include="Resources\LOGO.ico" />
+    <CustomBuild Include="MyHistogram.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="timescaledraw.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="clogFile.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CombineResult.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="common.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ConfigInfo.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="myQueue.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="reportingHook.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="resource.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="setDebugNew.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="stateTool.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="toolButton.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="glasswaredetectsystem_zh.ts">
+      <Filter>Translation Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_countset.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_UserManegeWidget.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_userwidget.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_Widget_CameraPosition.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_widget_test.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_Widget_userManege.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_glasswaredetectsystem.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_image_widget.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_Widget_CarveInfo.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_widget_Management.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SingleCameraPic.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GlasswareDetectSystem.rc" />
+  </ItemGroup>
+</Project>

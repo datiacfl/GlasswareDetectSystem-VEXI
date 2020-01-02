@@ -1,0 +1,12 @@
+//Q:更改控件样式后，qscrollarea自动更换背景？
+/*QPushButton{
+  border-style:none;
+  padding:10px;
+  border-radius:5px;
+  color:#34495E;
+  background:#FFFFFF;}
+
+QSpinBox{
+ height:30px;
+ width:30px;}
+*/

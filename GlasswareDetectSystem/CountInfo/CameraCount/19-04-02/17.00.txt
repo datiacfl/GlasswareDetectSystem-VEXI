@@ -1,0 +1,9 @@
+[Count]
+Body=0
+Mouth=0
+Buttom=0
+Camera1=0
+Camera2=0
+Camera3=0
+Camera4=0
+Camera5=0
