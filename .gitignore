@@ -10,6 +10,7 @@
 /ipch/
 /.vs/
 
+#runR file that need to ingore
 runR/*.exe 
 runR/*.exp
 runR/*.ilk
@@ -20,6 +21,7 @@ runR/*.pdb
 /runR/CountInfo/
 /runR/CountInfoByTime/
 
+#runD file need to ignore
 runD/*.exe 
 runD/*.exp
 runD/*.ilk
