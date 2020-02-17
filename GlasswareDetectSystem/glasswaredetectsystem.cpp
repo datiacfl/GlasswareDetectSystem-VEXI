@@ -6,6 +6,8 @@
 #include <QDateTime>
 #include <QPropertyAnimation>
 
+#include "CDataBase_PostgreSQL.h"
+
 GlasswareDetectSystem * pMainFrm;
 QString appPath;  //更新路径
 
@@ -87,7 +89,8 @@ void GlasswareDetectSystem::Init()
 	CLogFile::write(tr("InitParameter!"),OperationLog);
 	InitParameter();
 	CLogFile::write(tr("ReadIniInformation!"),OperationLog);
-	ReadIniInformation();
+	ReadDataBaseInformation();
+	//ReadIniInformation();
 //	SetCarvedCamInfo();
 	CLogFile::write(tr("Initialize!"),OperationLog);
 	Initialize();
@@ -442,6 +445,25 @@ void GlasswareDetectSystem::InitParameter()
 		m_sRealCamInfo[i].m_bGrabIsStart = FALSE;
 	}
 	connect(this,SIGNAL(signals_MessageBoxMainThread(s_MSGBoxInfo)),this,SLOT(slots_MessageBoxMainThread(s_MSGBoxInfo)));
+}
+
+//将配置信息从.ini文件改为数据库
+void GlasswareDetectSystem::ReadDataBaseInformation()
+{
+	DataBase_PostgreSQL::DALSystemConfigManager::ReadAllConfig(m_sConfigInfo,m_sSystemInfo,m_sErrorInfo,m_sRunningInfo,m_vstrPLCInfoType, m_sRealCamInfo, struGrabCardPara, CAMERA_MAX_COUNT);
+	//设置剪切参数路径
+	m_sConfigInfo.m_strGrabInfoPath = m_sConfigInfo.m_strAppPath + "ModelInfo/" + m_sSystemInfo.m_strModelName + "/GrabInfo.ini";
+	
+	//设置到对应的位置
+	QSettings iniCameraSet(m_sConfigInfo.m_strGrabInfoPath, QSettings::IniFormat);
+	QString strShuter, strTrigger;
+	for (int i = 0; i < m_sSystemInfo.iRealCamCount; i++)
+	{
+		strShuter = QString("/Shuter/Grab_%1").arg(i);
+		strTrigger = QString("/Trigger/Grab_%1").arg(i);
+		m_sRealCamInfo[i].m_iShuter = iniCameraSet.value(strShuter, 20).toInt();
+		m_sRealCamInfo[i].m_iTrigger = iniCameraSet.value(strTrigger, 1).toInt();//默认外触发
+	}
 }
 //读取配置信息
 void GlasswareDetectSystem::ReadIniInformation()

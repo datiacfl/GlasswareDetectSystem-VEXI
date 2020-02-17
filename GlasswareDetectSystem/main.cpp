@@ -5,6 +5,7 @@
 #include <QSplashScreen>
 #include <QTranslator>
 #include <QSettings>
+#include <QObject>
 
 //QT系统类型
 #define DAHENGBLPKP_QT			//QT系统时定义该类型，否则注释掉
@@ -12,6 +13,9 @@
 //QT检测内存泄漏头文件
 #include "setDebugNew.h"
 #include "reportingHook.h"
+
+#include "CDataBase_PostgreSQL.h"
+
 
 #define _CRTDBG_MAP_ALLOC 
 #include <crtdbg.h>
@@ -45,6 +49,8 @@ int main(int argc, char *argv[])
 	QString apppath = exepath.left(exepath.lastIndexOf("\\") + 1);
 	QString exename = exenameext.left(exenameext.lastIndexOf("."));
 	//只运行一个实例
+
+
 	QTranslator translator;  
 	QSettings setTranslation(".\\Config\\Config.ini",QSettings::IniFormat);
 	setTranslation.setIniCodec(QTextCodec::codecForName("GBK"));
@@ -67,6 +73,18 @@ int main(int argc, char *argv[])
 	QSplashScreen spLoading(QPixmap(strLoading.toLocal8Bit().constData()));
 	spLoading.show();
 	GlasswareDetectSystem w;
+	//for test
+	bool bConnected = DataBase_PostgreSQL::Database::Connect();
+	if (!bConnected)
+	{
+		CLogFile::write(QObject::tr("Failed to connect to the database!"), AbnormityLog);
+		//return -1;
+	}
+	else //read the postgresql database,for test
+	{
+		//DataBase_PostgreSQL::DALSystemConfigManager::ReadCameraDeviceConfig();
+	}
+
 	w.Init();
 	w.showNormal();
 	w.raise();//放到最上

@@ -140,6 +140,7 @@ private:
 	//初始化
 	void Initialize();
 	void InitParameter();//初始化参数
+	void ReadDataBaseInformation(); //将配置信息从.ini文件改为数据库
 	void ReadIniInformation();
 	void LoadParameterAndCam();//加载参数初始化相机
 	void InitGrabCard(s_GBINITSTRUCT struGrabCardPara,int index);//初始化采集卡

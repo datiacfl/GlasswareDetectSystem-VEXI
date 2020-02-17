@@ -400,8 +400,11 @@
     <ClCompile Include="GeneratedFiles\Release\moc_CameraOffLineMonitor.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
+    <ClCompile Include="CDataBase_PostgreSQL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="SingleCameraPic.cpp">
-      <Filter>Header Files</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -630,5 +633,10 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="GlasswareDetectSystem.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CDataBase_PostgreSQL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
